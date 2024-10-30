@@ -7,7 +7,7 @@ from sklearn.metrics import classification_report, accuracy_score, ConfusionMatr
 import shap
 import numpy as np
 import math
-import ast  # To parse JSON-like strings in the lineup column
+import ast 
 
 # Load the dataset
 df = pd.read_csv('CCFC_match_lineups_data.csv')
@@ -176,6 +176,7 @@ for outcome, features in non_empty_outcomes.items():
     plt.xlabel("Features")
     plt.ylabel("Average Value")
     plt.show()
+    
 # Goodbye message plot
 plt.figure(figsize=(10, 6))
 summary_features = ['passes', 'pressures']
